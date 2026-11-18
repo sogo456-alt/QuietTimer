@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · 静音定时器 Quiet Timer</title>
+<style>
+  :root {
+    --bg: #0b0b0f;
+    --surface: rgba(255,255,255,.055);
+    --stroke: rgba(255,255,255,.09);
+    --text: #f5f5f7;
+    --muted: rgba(255,255,255,.58);
+    --accent: #ffb020;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: radial-gradient(900px 500px at 50% -80px, rgba(255,176,32,.16), transparent 70%), var(--bg);
+    color: var(--text);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 34px; }
+  .mark {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: rgba(255,176,32,.14);
+    border: 1px solid rgba(255,176,32,.35);
+    display: grid; place-items: center; color: var(--accent); font-size: 20px;
+  }
+  .brand strong { font-size: 17px; letter-spacing: .2px; }
+  .brand span { display: block; color: var(--muted); font-size: 12.5px; }
+  h1 { font-size: 32px; line-height: 1.25; margin: 0 0 8px; letter-spacing: -.02em; }
+  .updated { color: var(--muted); font-size: 13px; margin-bottom: 34px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  h3 { font-size: 15.5px; margin: 22px 0 4px; }
+  p, li { color: rgba(255,255,255,.78); }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--stroke);
+    border-radius: 18px;
+    padding: 18px 20px;
+    margin: 22px 0;
+  }
+  .card p { margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--stroke); color: var(--muted); font-size: 13px; }
+  footer a { color: var(--muted); }
+  .lang { margin-top: 56px; padding-top: 30px; border-top: 1px solid var(--stroke); }
+  .lang h2 { margin-top: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <div class="mark">⏱</div>
+    <div><strong>静音定时器</strong><span>Quiet Timer</span></div>
+  </div>
+
+  <h1>隐私政策</h1>
+  <p class="updated">最后更新：2026 年 11 月 19 日</p>
+
+  <div class="card">
+    <p><strong>一句话总结：</strong>静音定时器不收集、不上传、不共享任何个人数据。没有账号，没有广告，没有分析统计，也不包含任何第三方追踪 SDK。</p>
+  </div>
+
+  <h2>1. 我们不收集什么</h2>
+  <ul>
+    <li>不收集姓名、邮箱、电话号码或任何账号信息。</li>
+    <li>不收集设备标识符、广告标识符、位置、通讯录、照片或麦克风数据。</li>
+    <li>不记录你的使用行为，不发送使用统计或崩溃日志到我们的服务器。</li>
+    <li>不使用任何第三方分析、广告或追踪 SDK。</li>
+  </ul>
+
+  <h2>2. 保存在你设备上的数据</h2>
+  <p>以下内容只保存在本机，不会离开你的设备。卸载 App 后由系统一并删除：</p>
+  <ul>
+    <li><strong>计时状态</strong>：当前倒计时、结束时间、暂停状态。保存在 App 与小组件共享的本地容器中，用于在锁屏、小组件和重启后恢复计时。</li>
+    <li><strong>偏好设置</strong>：提醒方式、默认时长、声音与灯光开关等。</li>
+    <li><strong>历史记录</strong>：你完成的计时次数、时长和结束时间，保存在 App 沙盒内。</li>
+  </ul>
+
+  <h2>3. 通知</h2>
+  <p>计时结束提醒是<strong>本地通知</strong>，由你的设备在预定时间生成，不经过我们的服务器。通知权限可以随时在 iOS「设置 → 通知 → 静音定时器」中关闭。</p>
+
+  <h2>4. 实时活动与小组件</h2>
+  <p>锁屏倒计时（实时活动）、灵动岛和桌面小组件读取同一份本地计时状态，只用于显示剩余时间和提供快捷入口。它们不会把数据发送到设备之外。</p>
+
+  <h2>5. 声音与灯光</h2>
+  <p>声音提醒使用 App 内置的提示音，遵循系统静音开关；灯光提醒仅在解锁完整版并手动开启后，于计时结束时让闪光灯闪烁。App 不申请相机权限，不拍摄、不存储任何图像。</p>
+
+  <h2>6. 内购</h2>
+  <p>完整版购买由 Apple 的 App Store 处理。我们不会收到你的支付方式、账单地址或 Apple ID。购买凭证由 StoreKit 在设备上验证，App 只在本地缓存「是否已解锁」这一状态，用于恢复购买和同步给小组件。</p>
+
+  <h2>7. 外部链接</h2>
+  <p>设置中的「隐私政策」「技术支持」等入口会在 Safari 中打开本页面和帮助页面。打开外部网页时，适用对应网站自己的隐私规则。App 本身不会在后台访问网络。</p>
+
+  <h2>8. 儿童</h2>
+  <p>本 App 不面向儿童收集任何信息，也不包含广告、社交或用户生成内容功能。</p>
+
+  <h2>9. 数据删除</h2>
+  <p>在 App 内「历史」页面可以清空全部计时记录；卸载 App 会删除所有本地数据。由于我们不保存任何服务器端数据，因此没有需要另行申请删除的内容。</p>
+
+  <h2>10. 政策变更</h2>
+  <p>如果本政策发生实质性变化，我们会更新本页面顶部的日期，并在 App 更新说明中注明。</p>
+
+  <h2>11. 联系我们</h2>
+  <p>任何隐私相关问题，请发送邮件至 <a href="mailto:sogo123@126.com">sogo123@126.com</a>。</p>
+
+  <div class="lang" lang="en">
+    <h2>Privacy Policy (English)</h2>
+    <p class="updated">Last updated: November 19, 2026</p>
+
+    <div class="card">
+      <p><strong>In one sentence:</strong> Quiet Timer does not collect, upload, or share any personal data. No account, no ads, no analytics, no third-party tracking SDKs.</p>
+    </div>
+
+    <h2>1. What we do not collect</h2>
+    <ul>
+      <li>No name, email address, phone number, or account information.</li>
+      <li>No device identifiers, advertising identifiers, location, contacts, photos, or microphone data.</li>
+      <li>No usage tracking and no crash or analytics uploads to our servers.</li>
+      <li>No third-party analytics, advertising, or tracking SDKs.</li>
+    </ul>
+
+    <h2>2. Data stored on your device</h2>
+    <p>The following stays on your device and is removed by iOS when you delete the app:</p>
+    <ul>
+      <li><strong>Timer state</strong>: the running countdown, end date, and paused state, kept in a local container shared with the widget so the timer survives locking, backgrounding, and restarts.</li>
+      <li><strong>Preferences</strong>: alert channels, default duration, sound and light switches.</li>
+      <li><strong>History</strong>: completed sessions with their duration and end time, stored in the app sandbox.</li>
+    </ul>
+
+    <h2>3. Notifications</h2>
+    <p>End-of-timer alerts are <strong>local notifications</strong> generated on your device at the scheduled time. They never pass through our servers. You can turn them off at any time in iOS Settings → Notifications → Quiet Timer.</p>
+
+    <h2>4. Live Activities and widgets</h2>
+    <p>The Lock Screen countdown, Dynamic Island, and Home Screen widget read the same local timer state and only display the remaining time. Nothing leaves the device.</p>
+
+    <h2>5. Sound and light</h2>
+    <p>Sound alerts use a bundled tone and follow the ring/silent switch. The light alert is available only in the full version, is off by default, and briefly flashes the torch when a timer ends. The app never requests camera access and never captures or stores images.</p>
+
+    <h2>6. In-app purchase</h2>
+    <p>The full version is sold by Apple through the App Store. We never receive your payment method, billing address, or Apple ID. StoreKit verifies the purchase on device, and the app only caches a local "unlocked" flag to restore purchases and update the widget.</p>
+
+    <h2>7. External links</h2>
+    <p>Links such as Privacy Policy and Support open this page or the support page in Safari. Those websites have their own privacy practices. The app itself does not access the network in the background.</p>
+
+    <h2>8. Children</h2>
+    <p>The app collects no information from children and contains no ads, social features, or user-generated content.</p>
+
+    <h2>9. Deleting your data</h2>
+    <p>You can clear all timer history from the History screen. Deleting the app removes all local data. Because we hold no server-side data, there is nothing else to request for deletion.</p>
+
+    <h2>10. Changes</h2>
+    <p>If this policy changes materially, we will update the date above and note it in the app's release notes.</p>
+
+    <h2>11. Contact</h2>
+    <p>For any privacy question, email <a href="mailto:sogo123@126.com">sogo123@126.com</a>.</p>
+  </div>
+
+  <footer>
+    <a href="./support.html">技术支持</a> · <a href="mailto:sogo123@126.com">联系邮箱</a><br>
+    © 2026 Quiet Timer
+  </footer>
+</div>
+</body>
+</html>
