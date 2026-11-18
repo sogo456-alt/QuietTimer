@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>静音定时器 · Quiet Timer</title>
+<meta name="description" content="不出声，也知道时间到了。用震动和屏幕闪烁提醒的静音倒计时，支持锁屏实时活动、桌面小组件和 Siri。">
+<style>
+  :root {
+    --bg: #0b0b0f;
+    --surface: rgba(255,255,255,.055);
+    --stroke: rgba(255,255,255,.09);
+    --text: #f5f5f7;
+    --muted: rgba(255,255,255,.58);
+    --accent: #ffb020;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1000px 560px at 50% -120px, rgba(255,176,32,.20), transparent 70%),
+      var(--bg);
+    color: var(--text);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 72px 24px 80px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--accent); font-size: 12.5px; font-weight: 600;
+    letter-spacing: .12em; text-transform: uppercase;
+    background: rgba(255,176,32,.10);
+    border: 1px solid rgba(255,176,32,.3);
+    padding: 6px 12px; border-radius: 999px;
+  }
+  h1 { font-size: 52px; line-height: 1.12; margin: 22px 0 14px; letter-spacing: -.03em; }
+  h1 span { color: var(--accent); }
+  .lead { color: var(--muted); font-size: 18px; max-width: 620px; margin-bottom: 34px; }
+  .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 64px; }
+  .btn {
+    display: inline-block; padding: 13px 22px; border-radius: 999px;
+    font-weight: 600; font-size: 15px; text-decoration: none;
+  }
+  .btn.primary { background: linear-gradient(135deg, #ffd45c, var(--accent)); color: #111; }
+  .btn.ghost { border: 1px solid var(--stroke); color: var(--text); background: var(--surface); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--stroke);
+    border-radius: 20px; padding: 20px;
+  }
+  .card .ico {
+    width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center;
+    background: rgba(255,176,32,.13); color: var(--accent); margin-bottom: 14px;
+    font-size: 18px;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 16px; }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; }
+  .note {
+    margin-top: 46px; padding: 18px 20px;
+    border: 1px solid var(--stroke); border-radius: 16px;
+    color: var(--muted); font-size: 13.5px;
+  }
+  footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--stroke); color: var(--muted); font-size: 13px; }
+  footer a { color: var(--muted); margin-right: 16px; }
+  a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">Quiet Timer</span>
+  <h1>不出声，<br><span>也知道时间到了。</span></h1>
+  <p class="lead">用震动和屏幕闪烁提醒的静音倒计时。适合图书馆、会议室、录音棚，以及睡着的孩子旁边。</p>
+
+  <div class="cta">
+    <a class="btn primary" href="./support.html">查看使用帮助</a>
+    <a class="btn ghost" href="./privacy.html">隐私政策</a>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="ico">◐</div>
+      <h3>全程不出声</h3>
+      <p>默认只用触感和屏幕闪烁。声音是可选项，并且遵循手机静音开关。</p>
+    </div>
+    <div class="card">
+      <div class="ico">◷</div>
+      <h3>锁屏也能看见</h3>
+      <p>实时活动把剩余时间放在锁屏和灵动岛，不用解锁手机。</p>
+    </div>
+    <div class="card">
+      <div class="ico">▦</div>
+      <h3>一抬手就开始</h3>
+      <p>桌面小组件一键启动常用时长，也可以对 Siri 说一句就开始。</p>
+    </div>
+    <div class="card">
+      <div class="ico">✦</div>
+      <h3>只在本地</h3>
+      <p>没有账号、没有广告、没有分析统计。记录只留在这台设备上。</p>
+    </div>
+  </div>
+
+  <div class="note">
+    静音定时器需要 iOS 17.0 或更高版本，支持 iPhone，界面提供简体中文和英文。
+    完整版为一次性买断，解锁自定义时长、更多预设、灯光提醒和历史统计。
+  </div>
+
+  <footer>
+    <a href="./privacy.html">隐私政策</a>
+    <a href="./support.html">技术支持</a>
+    <a href="mailto:sogo123@126.com">sogo123@126.com</a>
+    <div style="margin-top:10px">© 2026 Quiet Timer</div>
+  </footer>
+</div>
+</body>
+</html>
